@@ -13,6 +13,7 @@
 <!--		Фавикон:-->
 		<link rel="icon" href="img/favicon.ico" type="image/x-icon">
 		<link rel="stylesheet" href="css/style.css">
+
 	</head>
 	<body>
 		<div class="wrapper">
@@ -98,9 +99,62 @@
 											</div>
 										</div>
 									</article> -->
-
-
 							</div>
+
+							<!-- <form action="#" method="post" enctype="multipart/form-data">
+						        <div><input type="text" name="Имя" placeholder="Имя" value=""/></div>
+						        <div><p>Где и когда будет удобно назначить сеанс?</p><select name="city">
+						            <option selected value="rnd">Ростов-на-Дону</option>
+						            <option value="msk">Москва</option>
+						            <option value="snp">Санкт-Петербург</option>
+						        </select></div>
+						        <div><select name="city">
+						            <option selected value="june">Июнь</option>
+						            <option value="july">Июль</option>
+						            <option value="august">Август</option>
+						        </select></div>
+						        <div><input type="text" name="Inst\Telegram" placeholder="Instgram или Telegram для связи" value=""/></div>
+						        <div><input type="text" name="Телефон" placeholder="Телефон" value=""/></div>
+						        <div><textarea name="idea" placeholder="Эскиз будущей тату, размер и расположение"></textarea></div>
+						        <div><button type="submit"> Записаться </button></div>
+						    </form> -->
+						
+						<form id="form-contact" method="POST" class="contact-form" autocomplete="off" enctype="multipart/form-data">
+ 
+						  <p class="contact-form__title">Закажите обратный звонок и наш консультант свяжется с вами</p>
+						 
+						  <div class="preloader"></div>
+						  <p class="contact-form__message"></p>
+						 
+						  <!-- Поле с именем -->
+						  <div class="contact-form__input-wrapper contact-form__input-wrapper_name">
+						    <input name="name" type="text" class="contact-form__input contact-form__input_name"
+						           placeholder="Введите ваше имя">
+						  </div>
+						 
+						  <!-- Поле с телефоном -->
+						  <div class="contact-form__input-wrapper contact-form__input-wrapper_phone">
+						    <input name="phone" type="tel" class="contact-form__input contact-form__input_phone"
+						           placeholder="Введите ваш телефон">
+						  </div>
+						 
+						  <!-- Поле с выбором файла -->
+						  <div class="contact-form__input-wrapper">
+						    <input type="file" name="files[]" id="contact-form__input_file"
+						           class="contact-form__input contact-form__input_file" multiple>
+						    <label for="contact-form__input_file" class="contact-form__file-button">
+						      <span class="contact-form__file-text">Выберите файл</span>
+						    </label>
+						  </div>
+						 
+						  <!--Поле с темой в письме-->
+						  <input name="theme" type="hidden" class="contact-form__input contact-form__input_theme"
+						         value="Заявка с сайта Smartlanding.biz">
+						 
+						  <!--Кнопка отправки формы-->
+						  <button type="submit" class="contact-form__button">Отправить</button>
+ 
+                             </form>
 						</div>
 					</section>
 				</main>
@@ -113,6 +167,7 @@
 			</footer>
 		</div>
 		<script type="module" src="main.js"></script>
+		<script src="/telegramform/js/telegramform.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
   		<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
   		<!-- подключение jquery -->
